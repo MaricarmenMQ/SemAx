@@ -1,0 +1,9 @@
+{
+  "modalidad": "CONJUNTIVA",
+  "recorte_central": [
+    0.55,
+    0.22
+  ],
+  "version": "conjuntiva-ghana-2026-10-29",
+  "auc_prueba": 0.882
+}

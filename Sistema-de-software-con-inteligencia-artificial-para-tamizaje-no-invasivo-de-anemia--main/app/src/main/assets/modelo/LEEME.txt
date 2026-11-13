@@ -1,0 +1,8 @@
+Un modelo por modalidad: conjuntiva.tflite, palma.tflite, una.tflite (los genera ml/entrenar.py).
+Cada uno va con su .json: versión y recorte central a aplicar (zona del recuadro guía).
+
+- La app usa automáticamente los modelos que existan; las modalidades sin modelo no se clasifican.
+- Si no hay ninguno, usa el clasificador SIMULADO de la demo (marcado como tal en pantalla).
+
+Formato esperado: entrada [1, alto, ancho, 3] float32 (RGB 0–1);
+salida [1, 1] (probabilidad de anemia) o [1, 2] (sin anemia, anemia).

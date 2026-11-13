@@ -1,0 +1,124 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "854fb14f7d0c8a9287dc807283671393",
+    "entities": [
+      {
+        "tableName": "tamizajes",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `fechaMillis` INTEGER NOT NULL, `codigoParticipante` TEXT NOT NULL, `edadMeses` INTEGER NOT NULL, `sexo` TEXT NOT NULL, `altitudMsnm` INTEGER NOT NULL, `hbObservada` REAL, `rutaConjuntiva` TEXT NOT NULL, `rutaPalma` TEXT NOT NULL, `rutaUna` TEXT NOT NULL, `probabilidadIa` REAL NOT NULL, `probConjuntiva` REAL, `probPalma` REAL, `probUna` REAL, `modeloIa` TEXT NOT NULL, `iaSimulada` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fechaMillis",
+            "columnName": "fechaMillis",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "codigoParticipante",
+            "columnName": "codigoParticipante",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "edadMeses",
+            "columnName": "edadMeses",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sexo",
+            "columnName": "sexo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "altitudMsnm",
+            "columnName": "altitudMsnm",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hbObservada",
+            "columnName": "hbObservada",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rutaConjuntiva",
+            "columnName": "rutaConjuntiva",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rutaPalma",
+            "columnName": "rutaPalma",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rutaUna",
+            "columnName": "rutaUna",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "probabilidadIa",
+            "columnName": "probabilidadIa",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "probConjuntiva",
+            "columnName": "probConjuntiva",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "probPalma",
+            "columnName": "probPalma",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "probUna",
+            "columnName": "probUna",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modeloIa",
+            "columnName": "modeloIa",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "iaSimulada",
+            "columnName": "iaSimulada",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '854fb14f7d0c8a9287dc807283671393')"
+    ]
+  }
+}

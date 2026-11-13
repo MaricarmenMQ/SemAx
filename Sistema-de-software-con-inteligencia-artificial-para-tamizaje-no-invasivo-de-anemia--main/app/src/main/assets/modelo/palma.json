@@ -1,0 +1,9 @@
+{
+  "modalidad": "PALMA",
+  "recorte_central": [
+    0.45,
+    0.3
+  ],
+  "version": "palma-ghana-2026-10-29",
+  "auc_prueba": 0.797
+}
